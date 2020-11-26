@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style/main.css">
+
+   <!--responsividade (adequar os esquadros da tela do site-->
+   <link rel="stylesheet" href="style/responsive.css">
+
+   <!--owl css-->
+   <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+   <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+
     <title>NETFLIX CLONE</title>
 </head>
 <body>
@@ -27,20 +36,88 @@
                 <h3 class="titulo">THE 100</h3>
                 <p class="descricao">Quase 100 anos após um apocalipse nuclear devastar a Terra, 100 sobreviventes de uma estação espacial voltam para avaliar as condições do planeta. Assista agora</p>
             </div>
+            <!--AQUI ACRESCENTEI DUAS FUNÇÕES-->
             <div class="botoes">
-                <button role="button" class="botao">
+                <button role="button" class="botao" onclick="mensagem()">
                     <i class="fas fa-play"></i> 
                     ASSISTIR AGORA
                 </button>
-                <button role="button" class="botao">
+                <button role="button" class="botao" onclick="redirecionar()";>
                     <i class="fas fa-info-circle"></i>
                     MAIS INFORMAÇÕES
                 </button>
             </div>
         </div>
     </main>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <!--ACRESCENTEI UM LINK NAS FIGURAS CHAMANDO OUTRAS PÁGINAS DE INTERNET - ALGUMAS DA NETFLIX-->
+            <div class="item">
+                <a href="https://www.netflix.com/br/title/80214236" target="blank">
+                    <img class="box-filme" src="img/mini1.jpg"  alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=T2ZqS6Fs7qo" target="blank">
+                    <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="https://www.netflix.com/br/title/81038599" target="blank">
+                    <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">    
+                </a>
+            </div> 
+            
+            <div class="item">
+                <a href="https://www.netflix.com/br/title/80186863" target="blank">
+                    <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=jrJj_JIcNgQ" target="blank">
+                    <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="https://globoplay.globo.com/chicago-pd-distrito-21/t/Sm7W5PV9rP/" target="blank">
+                    <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=jfVTJm9NilA" target="blank">
+                    <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=Z1xIeP7irVo" target="blank">
+                    <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
+                </a>
+                
+            </div>
+            <div class="item">
+                <a href="https://www.netflix.com/br/title/81277950" target="blank">
+                    <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
+                </a>
+            </div>
+
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=JZPLa88OZkQ" target="blank">
+                    <img class="box-filme" src="img/mini10.jpg" alt="" srcset="">
+                </a>
+            </div>
+
+        </div>
+    </div>
 
     <script src="https://kit.fontawesome.com/a06af6ae71.js"></script>
-
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 </body>
 </html>
